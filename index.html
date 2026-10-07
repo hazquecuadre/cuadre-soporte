@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Soporte — CUADRE</title>
+  <meta name="description" content="Soporte de CUADRE, la app para cotizar tus proyectos con certeza. Escríbenos y te respondemos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --crema: #EDE7DD;
+      --marfil: #F7F3EB;
+      --tinta: #221C18;
+      --piedra: #6F675E;
+      --terracota: #B26B43;
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    * { box-sizing: inherit; margin: 0; padding: 0; }
+    html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+    body {
+      background: var(--crema);
+      color: var(--tinta);
+      font-family: 'Mulish', -apple-system, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+    .contenedor {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 56px 24px 40px;
+    }
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--piedra);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(32px, 6vw, 44px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .intro {
+      font-size: 18px;
+      color: var(--piedra);
+      margin-bottom: 36px;
+      max-width: 54ch;
+    }
+    .tarjeta-contacto {
+      background: var(--marfil);
+      border-radius: 16px;
+      padding: 32px 28px;
+      margin-bottom: 48px;
+    }
+    .tarjeta-contacto p {
+      color: var(--piedra);
+      margin-bottom: 20px;
+    }
+    .boton-correo {
+      display: inline-block;
+      background: var(--terracota);
+      color: var(--marfil);
+      font-weight: 700;
+      font-size: 17px;
+      text-decoration: none;
+      padding: 14px 26px;
+      border-radius: 12px;
+    }
+    .nota-respuesta {
+      font-size: 14px;
+      color: var(--piedra);
+      margin-top: 16px;
+      margin-bottom: 0 !important;
+    }
+    .canal-secundario {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--crema);
+      font-size: 15px;
+      color: var(--piedra);
+      margin-bottom: 0 !important;
+    }
+    .canal-secundario a {
+      color: var(--tinta);
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid var(--tinta);
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    .faq {
+      background: var(--marfil);
+      border-radius: 16px;
+      padding: 8px 28px;
+      margin-bottom: 48px;
+    }
+    .faq details {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--crema);
+    }
+    .faq details:last-child { border-bottom: none; }
+    .faq summary {
+      font-weight: 700;
+      font-size: 17px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after {
+      content: "+";
+      font-weight: 400;
+      font-size: 22px;
+      color: var(--piedra);
+      flex-shrink: 0;
+    }
+    .faq details[open] summary::after { content: "–"; }
+    .faq details p {
+      margin-top: 12px;
+      color: var(--piedra);
+      font-size: 16px;
+    }
+    .faq a {
+      color: var(--tinta);
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: var(--piedra);
+      padding-bottom: 24px;
+    }
+    footer .frase {
+      font-weight: 700;
+      color: var(--tinta);
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    footer a {
+      color: var(--piedra);
+      text-decoration: none;
+      border-bottom: 1px solid var(--piedra);
+    }
+    footer .ligas { margin-bottom: 14px; }
+    footer .ligas a { margin: 0 10px; }
+    @media (prefers-color-scheme: dark) {
+      /* CUADRE es modo claro siempre — se fuerza la paleta también aquí */
+      body { background: #EDE7DD; color: #221C18; }
+    }
+  </style>
+</head>
+<body>
+  <main class="contenedor">
+    <p class="eyebrow">Soporte · CUADRE</p>
+    <h1>¿Necesitas ayuda?</h1>
+    <p class="intro">Estamos para que tus cuentas cuadren. Si algo no funciona, tienes una duda o quieres proponer una mejora, escríbenos — del otro lado hay una persona que conoce el oficio.</p>
+
+    <div class="tarjeta-contacto">
+      <p>La vía más rápida es el correo. Cuéntanos qué pasó y, si puedes, agrega una captura de pantalla: con eso resolvemos más rápido.</p>
+      <a class="boton-correo" href="mailto:contacto@hazquecuadre.com?subject=Soporte%20CUADRE">Escribir a contacto@hazquecuadre.com</a>
+      <p class="nota-respuesta">Respondemos normalmente en 1–2 días hábiles.</p>
+      <p class="canal-secundario">También estamos en Instagram: <a href="https://instagram.com/hazquecuadre" target="_blank" rel="noopener">@hazquecuadre</a></p>
+    </div>
+
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq">
+      <details>
+        <summary>¿Cómo cancelo mi suscripción?</summary>
+        <p>Tu suscripción se administra directo con Apple. En tu iPhone o iPad: Ajustes → tu nombre → Suscripciones → CUADRE → Cancelar. Puedes cancelar cuando quieras; seguirás teniendo acceso hasta el final del período que ya pagaste.</p>
+      </details>
+      <details>
+        <summary>Cambié de dispositivo. ¿Dónde quedaron mis datos y mi suscripción?</summary>
+        <p>Tus datos viven en tu propia cuenta de iCloud y tu suscripción está ligada a tu cuenta de Apple. Entra en el dispositivo nuevo con las mismas cuentas, abre CUADRE, y ahí está todo: catálogo, presupuestos, gastos y proyectos.</p>
+      </details>
+      <details>
+        <summary>¿Ustedes pueden ver mi información?</summary>
+        <p>No. Tus datos viven en tu cuenta de iCloud, no en servidores nuestros — nosotros no los vemos. Los detalles están en nuestro <a href="https://hazquecuadre.com/cuadre-privacidad/">aviso de privacidad</a>.</p>
+      </details>
+      <details>
+        <summary>Encontré un error o tengo una idea para mejorar CUADRE</summary>
+        <p>Queremos saberlo — lo sincero, no lo amable. Escríbenos a <a href="mailto:contacto@hazquecuadre.com">contacto@hazquecuadre.com</a> contando qué pasó o qué te gustaría que existiera. Mucho de lo que CUADRE hace hoy nació de peticiones así.</p>
+      </details>
+    </div>
+
+    <footer>
+      <p class="frase">Cuando el número cuadra, tú duermes tranquilo.</p>
+      <p class="ligas">
+        <a href="https://hazquecuadre.com">hazquecuadre.com</a>
+        <a href="https://hazquecuadre.com/cuadre-privacidad/">Privacidad</a>
+      </p>
+      <p>© 2026 CUADRE</p>
+    </footer>
+  </main>
+</body>
+</html>
